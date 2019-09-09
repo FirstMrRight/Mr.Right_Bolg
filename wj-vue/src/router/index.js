@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import AppIndex from '../components/home/AppIndex'
 import JotterIndex from '../components/jotter/JotterIndex'
 import Editor from '../components/jotter/Editor'
-import LibraryIndex from '../components/library/LibraryIndex'
+// import LibraryIndex from '../components/library/LibraryIndex'
 import Login from '../components/Login'
 import Home from '../components/Home'
 import AdminIndex from '../components/admin/AdminIndex'
@@ -52,7 +52,7 @@ export default new Router({
           meta: {
             requireAuth: true
           }
-        },
+        }
         // {
         //   //图书馆功能不完善，暂时不用
         //   path: '/library',

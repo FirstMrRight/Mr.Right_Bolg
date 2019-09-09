@@ -8,6 +8,7 @@ import router from './router'
 import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 import store from './store'
+import VueParticles from 'vue-particles'
 
 var axios = require('axios')
 axios.defaults.baseURL = 'http://localhost:8443/api'
@@ -16,6 +17,7 @@ Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(mavonEditor)
+Vue.use(VueParticles)
 
 router.beforeEach((to, from, next) => {
     if (to.meta.requireAuth) {

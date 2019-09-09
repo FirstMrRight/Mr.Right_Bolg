@@ -17,6 +17,23 @@
         <el-button type="primary" style="width: 100%;background: #505458;border: none" v-on:click="login">登录</el-button>
       </el-form-item>
     </el-form>
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="0.85"
+        :particlesNumber="100"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#CAE1FF"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+      ></vue-particles>
   </body>
 </template>
 <script>
@@ -29,7 +46,7 @@
         },
         checked: true,
         loginForm: {
-          username: 'admin',
+          username: 'liutx',
           password: '123'
         },
         loading: false
@@ -60,7 +77,7 @@
 </script>
 <style>
    #paper {
-    background:url("../assets/img/bg/login_bg.jpg") no-repeat;
+    background:url("../assets/img/bg/eva1.jpg") no-repeat;
     background-position: center;
     height: 100%;
     width: 100%;
